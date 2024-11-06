@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cards Webpage</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for all cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Individual card styling */
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Image styling */
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Card content */
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; margin: 20px;">Image Cards</h1>
+    
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Image 1">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 1</h3>
+                <p class="card-description">This is a description for the first card. It gives a brief overview of the card's content.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Image 2">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 2</h3>
+                <p class="card-description">This is a description for the second card. It gives a brief overview of the card's content.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Image 3">
+            <div class="card-content">
+                <h3 class="card-title">Card Title 3</h3>
+                <p class="card-description">This is a description for the third card. It gives a brief overview of the card's content.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
